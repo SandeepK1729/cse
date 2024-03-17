@@ -7,6 +7,7 @@ import Header from "@/partials/Header";
 import Providers from "@/partials/Providers";
 import "@/styles/main.scss";
 import StoreProvider from "./StoreProvider";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({
   children,
@@ -62,7 +63,10 @@ export default function RootLayout({
           <Providers>
             <Header />
             <SearchModal />
-            <main>{children}</main>
+              <main>
+                {children}
+                <Analytics />
+              </main>
             <Footer />
           </Providers>
         </StoreProvider>
