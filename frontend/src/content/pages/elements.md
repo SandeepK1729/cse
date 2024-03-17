@@ -41,9 +41,9 @@ Did you come here for something in particular or just general Riker-bashing? And
 
 6. Did you come here for something in particular
 
-7. URLs and URLs in angle brackets will automatically get turned into links. [http://www.example.com](http://www.example.com) or
+7. URLs and URLs in angle brackets will automatically get turned into links. [http://www.cse-nine.vercel.app](http://www.cse-nine.vercel.app) or
 
-8. [http://www.example.com](http://www.example.com) and sometimes example.com (but not on Github, for example).
+8. [http://www.cse-nine.vercel.app](http://www.cse-nine.vercel.app) and sometimes cse-nine.vercel.app (but not on Github, for example).
 
 ---
 
@@ -61,7 +61,7 @@ Did you come here for something in particular or just general Riker-bashing? And
 
 Or leave it empty and use the [link text itself].
 
-example.com (but not on Github, for example).
+cse-nine.vercel.app (but not on Github, for example).
 
 Some text to show that the reference links can follow later.
 
