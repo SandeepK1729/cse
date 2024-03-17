@@ -1,19 +1,18 @@
 {
   "name": "cse-frontend",
   "version": "2.2.2",
-  "description": "Nextjs and Tailwindcss boilerplate",
-  "author": "zeon.studio",
+  "description": "CSE frontend",
+  "author": "SandeepK1729",
   "license": "MIT",
-  "packageManager": "yarn@1.22.19",
   "scripts": {
     "dev": "npm run generate-json && next dev",
-    "build": "yarn generate-json && next build",
+    "build": "npm generate-json && next build",
     "preview": "next start",
     "postbuild": "next-sitemap",
     "lint": "next lint",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
-    "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
+    "remove-darkmode": "node scripts/removeDarkmode.js && npm format"
   },
   "engines": {
     "node": ">=18.0.0"
