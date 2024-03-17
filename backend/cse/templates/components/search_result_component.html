@@ -1,0 +1,50 @@
+<!--
+    {{ result|safe }}
+-->
+{% comment %} <div class="card">
+    <div class="card-header">
+        <h4 class="card-title">{{ result.title }} : {{ result.displayLink }}</h4>
+    </div>
+    <div class="card-body">
+        {% for image in result.pagemap.cse_image %}
+            {% if forloop.first %}
+                <img src="{{ image.src }}" alt="" class="img-fluid" width="40rem">
+            {% endif %}
+        {% endfor %}
+
+        <p class="card-text">{{ result.snippet }}</p>
+    </div>
+    <div class="card-footer">
+        <a href="https://www.youtube.com/watch?v=YQHsXMglC9A" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div> {% endcomment %}
+
+<div class="d-flex flex-row border mb-2">
+    <div class="p-2 d-flex align-items-center">
+        {% for image in result.pagemap.cse_image %}
+            {% if forloop.first %}
+                <img src="{{ image.src }}" alt="" class="img-fluid " width="50rem">
+            {% endif %}
+        {% empty %}
+            <img src="https://via.placeholder.com/50" alt="" class="img-fluid"> 
+        {% endfor %}
+    </div>
+    <div class="d-flex flex-column w-100 justify-content-between">
+        <div class="p-2 d-flex">
+            <form action="/search_page" method="get" class="flex-item">
+                <input type="hidden" name="q" value="{{ q }}">
+                <input type="hidden" name="link" value="{{ result.link }}">
+                <input type="hidden" name="title" value="{{ result.title }}">
+                <input type="hidden" name="snippet" value="{{ result.snippet }}">
+                <input type="hidden" name="displayLink" value="{{ result.displayLink }}">
+                <button type="submit" class="text-primary">{{ result.htmlTitle|safe }} </button>
+            </form>
+            <p class="w-auto flex-item">
+                {{ result.displayLink }}
+            </p>
+        </div>
+        <div class="p-2">
+            <p class="fs-6">{{ result.htmlSnippet|safe }}</p>
+        </div>
+    </div>
+</div>

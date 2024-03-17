@@ -1,0 +1,11 @@
+django
+django-rest-framework
+dj-database-url
+djangorestframework-jwt
+htmx
+django-htmx
+requests
+django-crispy-forms
+crispy-bootstrap5
+django-environ
+spacy

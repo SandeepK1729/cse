@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block body %}
+
+{% include "nav.html" %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="">
+                <h1 class="text-center">Web Data Noise Reduction</h1>
+                <p>Web Data Noise Reduction is a web application that allows users search data from the web and get the most relevant results. The application is built using Django framework and the machine learning algorithm is implemented using Python.</p>
+
+                <!-- div containing search box with htmx -->
+                <div class="col-md-8 col-sm-12 m-auto">
+                    <form action="/search" method="get" class="d-flex align-items-center gap-1">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="q" placeholder="Search for...">
+                        </div>
+                        <button id="search_button" type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
+
+                <!-- div containing search results -->
+                {% if q %}
+                    {% include "search.html" %}
+                {% else %}
+                    <div class="col-md-10 col-sm-12 m-auto">
+                        <h6 class="htmx-indicator" id="loading_text"> Loading .... </h6>
+                        <div id="results">
+                        </div>
+                    </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

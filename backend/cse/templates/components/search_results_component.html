@@ -1,0 +1,17 @@
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 mt-3">
+            <h4>Search Results</h4>
+            <p>Found {{ searchInformation.totalResults }} results on the interent</p>
+            {% if items|length > 0 %}
+                <p>CSE suggested {{ items|length }} results</p>
+            {% endif %}
+            
+            <div class="list_results">
+            {% for result in items %}
+                    {% include "components/search_result_component.html" %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
