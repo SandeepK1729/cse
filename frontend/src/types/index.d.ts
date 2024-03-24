@@ -73,3 +73,12 @@ export type Button = {
   label: string;
   link: string;
 };
+
+export type LoginResponse = {
+  token: string;
+  email: string;
+  username: string;
+  first_name: string;
+  last_name: string;
+  id: string;
+};

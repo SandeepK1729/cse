@@ -1,6 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from rest_framework.decorators import api_view
-from rest_framework.response import Response
+from rest_framework.views import APIView, Response
+from rest_framework.permissions             import IsAuthenticated
 
 from django.views.decorators.csrf import csrf_exempt
 
@@ -538,14 +539,24 @@ def search(request):
         **results,
     })
 
-@api_view(['GET'])
-def search_api(request):
-    if request.GET.get('q') is None:
-        return Response({})
+class SearchAPIView(APIView):
+    permission_classes = (IsAuthenticated, )
 
-    results = get_search_results(request.GET)
-    print(results)
-    return Response(results)
+    def post(self, request, format=None):
+        if request.GET.get('q', '') == '':
+            return Response(status = 400)
+        
+        context = {
+            key : val for key, val in request.GET.items()
+        }
+        
+        get_search = get_search_results
+        if request.user.is_authenticated:
+            get_search = request.user.get_user_specific_search_results
+        
+        results = get_search(context)
+        
+        return Response(results)
 
 def search_page(request):
     context = request.data if request.method != 'GET' else request.GET

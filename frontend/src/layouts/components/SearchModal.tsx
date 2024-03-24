@@ -19,6 +19,7 @@ const SearchModal = () => {
       return [];
     } else {
       const searchResult = searchData.filter((item) => {
+        console.log('searching is called....');
         const title = item.frontmatter.title.toLowerCase().match(regex);
         const description = item.frontmatter.description
           ?.toLowerCase()
