@@ -9,10 +9,6 @@
       "url": "/about"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
       "name": "Pages",
       "url": "",
       "hasChildren": true,
@@ -24,10 +20,6 @@
         {
           "name": "Authors",
           "url": "/authors"
-        },
-        {
-          "name": "Categories",
-          "url": "/categories"
         }
       ]
     }

@@ -1,12 +1,21 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
-import authSlice from './authSlice'
+import { authSlice, searchSlice } from './slices'
+import { authApi,   searchApi }   from './api'
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       auth: authSlice,
-    }
+      search: searchSlice,
+
+      [authApi.reducerPath]: authApi.reducer,
+      [searchApi.reducerPath]: searchApi.reducer,
+    },
+    middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware()
+      .concat(authApi.middleware)
+      .concat(searchApi.middleware),
   })
 }
 

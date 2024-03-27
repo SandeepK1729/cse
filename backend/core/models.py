@@ -192,13 +192,10 @@ class User(AbstractUser):
         ]
         priority_scores = predict_priority_scores(meta_infos, liked_keywords)
         scores          = generate_order({
-            'predictive_score': priority_scores,
+            'predictive_score': [score[0] for score in priority_scores.tolist()],
             # 'relevance_socre' : [],
         }, len(items))
         search['items'] = prioritize_results_order(items, scores)
-
-        # for item in items:
-        #     print('{} {}: {}'.format(item['title'], item['snippet'], item['priority_score']))
 
         return search
     

@@ -74,11 +74,5 @@ export type Button = {
   link: string;
 };
 
-export type LoginResponse = {
-  token: string;
-  email: string;
-  username: string;
-  first_name: string;
-  last_name: string;
-  id: string;
-};
+export * from './auth.types';
+export * from './search.types';

@@ -9,6 +9,7 @@ import "@/styles/main.scss";
 import StoreProvider from "./StoreProvider";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import CustomToastContainer from "@/components/CustomToastContainer";
 
 export default function RootLayout({
   children,
@@ -65,9 +66,10 @@ export default function RootLayout({
             <Header />
             <SearchModal />
               <main>
+                <CustomToastContainer />
                 {children}
-                <Analytics />
-                <SpeedInsights />
+                {/* <Analytics /> */}
+                {/* <SpeedInsights /> */}
               </main>
             <Footer />
           </Providers>

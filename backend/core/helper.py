@@ -97,6 +97,7 @@ def tokenize_data(records):
     return pad
 
 def predict_priority_scores(meta_infos, liked_keywords):
+    print(meta_infos, liked_keywords, "\n" * 3)
     model = load_nn_model()
     meta_pads = tokenize_data(meta_infos)
     liked_pad = tokenize_data(liked_keywords)
@@ -148,7 +149,9 @@ def prioritize_results_order(items, order):
         Returns:
             list: list of search results with priority scores
     """
+    print(order)
     for i in range(0, len(items)):
+        print("hello", order[i])
         items[i]['priority_score'] = order[i]
     
     items.sort(key = lambda item: item['priority_score'])

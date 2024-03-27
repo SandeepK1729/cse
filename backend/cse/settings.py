@@ -19,8 +19,14 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_WHITELIST = [
+    "http://localhost:3000",
+    env.str('FRONTEND_URL', default = 'http://localhost:3000'),
+]
 
+# change the setting of append slash 
 
+APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [
@@ -58,17 +64,16 @@ MIDDLEWARE = [
 
     'corsheaders.middleware.CorsMiddleware',        # corsheaders middleware
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',        # simple jwt authentication
-    )
-}
-
 ROOT_URLCONF = 'cse.urls'
 
+REST_FRAMEWORK = {
+     'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',        # simple jwt authentication
+      ],
+}
 
-ACCESS_TOKEN_LIFETIME_DAYS = env('ACCESS_TOKEN_LIFETIME', cast = int, default = 365)
+
+ACCESS_TOKEN_LIFETIME_DAYS = env('ACCESS_TOKEN_LIFETIME', cast = int, default = 30)
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days = ACCESS_TOKEN_LIFETIME_DAYS),
     'REFRESH_TOKEN_LIFETIME': timedelta(days = ACCESS_TOKEN_LIFETIME_DAYS + 1),

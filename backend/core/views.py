@@ -5,10 +5,11 @@ from rest_framework.permissions             import IsAuthenticated
 
 from django.views.decorators.csrf import csrf_exempt
 
-from .forms import CustomUserCreationForm
-from .lib import get_search_results, get_page_content
-from .models import User
-from .helper    import custom_render, extract_keywords
+from .forms                 import CustomUserCreationForm
+from .lib                   import get_search_results, get_page_content
+from .models                import User
+from .helper                import custom_render, extract_keywords
+from .serializers           import UserSerializer
 
 results = {
     "items": [
@@ -510,18 +511,56 @@ results = {
 def home(request):
     return render(request, 'home.html')
 
-def signup(request):
-    if request.method == 'POST':    
-        form = CustomUserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            auth_login(request, user)
-            return redirect('login')
-    else:
-        form = CustomUserCreationForm()
-    return render(request, 'registration/signup.html', {
-        'form' : form,
-    })
+class SignupView(APIView):
+    """Signup view"""
+    def post(self, request):
+        """Signup post method
+        
+        Args:
+            request (Request): request object
+        
+        Returns:
+            JSON: contains access, refresh token and user name and email
+        """
+        serializer = UserSerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            user = serializer.create(serializer.validated_data)
+        
+        return Response(UserSerializer(user).data)
+
+class ProfileView(APIView):
+    """Profile view"""
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """Profile get method
+        
+        Args:
+            request (Request): request object
+        
+        Returns:
+            JSON: contains user data
+        """
+        serializer = ProfileSerializer(request.user)
+        return Response({
+            **serializer.data,
+            'followers' : request.user.get_followers_count(),
+            'following' : request.user.get_following_count(),
+        })
+    
+    def put(self, request):
+        """Profile put method
+        
+        Args:
+            request (Request): request object
+        
+        Returns:
+            JSON: contains user data
+        """
+        serializer = ProfileSerializer(request.user, data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.update(request.user, serializer.validated_data)
+        return Response(serializer.data)
 
 def search(request):
     context = {
@@ -543,12 +582,14 @@ class SearchAPIView(APIView):
     permission_classes = (IsAuthenticated, )
 
     def post(self, request, format=None):
-        if request.GET.get('q', '') == '':
+        print(request.POST)
+        if request.data.get('q', '') == '':
             return Response(status = 400)
         
         context = {
-            key : val for key, val in request.GET.items()
+            key : val for key, val in request.data.items()
         }
+        print("context ", context)
         
         get_search = get_search_results
         if request.user.is_authenticated:
