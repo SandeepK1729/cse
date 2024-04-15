@@ -12,7 +12,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 from .lib import get_search_results
-from .helper import predict_priority_scores, extract_keywords, prioritize_results_order, generate_order
+from .helper import predict_priority_scores, extract_keywords, prioritize_results_order, generate_order, retrain_model, get_relevance_score
 
 sex_choice = (
     ('Male', 'Male'),
@@ -98,58 +98,6 @@ class AbstractUser(AbstractBaseUser, PermissionsMixin):
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
 
-# class User(AbstractUser):
-#     # CustomUser model will be act as General class of parent
-#     searches_count          = models.IntegerField(default=0)
-#     interested_sites        = models.JSONField(default=list)
-#     not_interested_sites    = models.JSONField(default=list)
-
-#     def update_search_profile(self, context):
-        
-#         # get me list of profiles which have query_keys in their query_keys, highest matching_count first
-#         profiles = self.get_user_interest_profiles(context['query'])
-
-#         if profiles.exists():
-#             profile = profiles.first()
-#         else:
-#             profile = UserInterestProfile(user=self)
-#             self.searches_count += 1
-#             self.save()
-
-#         profile.query = context['query']
-#         profile.query_keys = list(set(profile.query_keys + context['query_keys']))
-#         profile.interested_keywords = list(set(profile.interested_keywords + context['interested_keywords']))
-#         profile.not_interested_keywords = list(set(profile.not_interested_keywords + context['not_interested_keywords']))
-#         profile.site = context['site']
-#         profile.save()
-
-#     def get_user_interest_profiles(self: AbstractUser, query: str):
-#         query_keys = [
-#             token.lemma_ for token in nlp(query) if token.is_alpha and not token.is_stop
-#         ]
-#         return self.searches.annotate(
-#                 matching_count = models.Sum(
-#                     models.Case(
-#                         *[modes.When(query_keys__icontains=key, then=1) for key in query_keys],
-#                         default=0,
-#                         output_field=models.IntegerField()
-#                     )
-#                 )
-#             ).filter(matching_count__gt=0).order_by('-matching_count')
-
-# class UserInterestProfile(models.Model):
-#     user                        = models.OneToOneField(User, on_delete=models.CASCADE, related_name="searches")
-#     query                       = models.CharField(max_length=100, blank=True)
-#     query_keys                  = models.JSONField(default=list)
-#     timestamp                   = models.DateTimeField(auto_now_add=True)
-#     interested_keywords         = models.JSONField(default=list)
-#     not_interested_keywords     = models.JSONField(default=list)
-#     site                        = models.CharField(max_length=100, blank=True)
-
-#     def __str__(self):
-#         return f"{self.user.username} - {self.query}"
-    
-
 class Site(models.Model):
     domain          = models.CharField(max_length = 255)
     route           = models.CharField(max_length = 100)
@@ -158,15 +106,37 @@ class Site(models.Model):
     description     = models.TextField(blank=True)
     duration        = models.IntegerField(default = 20)
 
+    def __str__(self):
+        return f"{self.title} - {self.domain}"
+
 def generate_default_fields():
     return dict({"domains": {}, "action_intialization": 0})
 
 class User(AbstractUser):
     info            = models.JSONField(default = generate_default_fields)
 
-    def get_user_liked_keywords(self):
-        search_histories = self.search_history.filter()[:settings.THRESHOLD_BACKTRACK_HISTORY]
-        return search_histories.values_list('query_keys', flat=True)
+    def get_user_keywords(self):
+        keywords = self.search_history.all().values_list('query_keys', 'is_relevant')[:settings.THRESHOLD_BACKTRACK_HISTORY]
+
+        keys = {
+            True: [],
+            False: []
+        }
+        for key_list, is_relevant in keywords:
+            keys[is_relevant].extend(key_list)
+
+        liked_keys = set(keys[True])
+        not_liked_keys = set(keys[False])
+        common_keys = liked_keys.intersection(not_liked_keys)
+
+        liked_keys = liked_keys - common_keys
+        not_liked_keys = not_liked_keys - common_keys
+        
+        # stringify the keys
+        liked_str_keys = ' '.join(liked_keys)
+        not_liked_str_keys = ' '.join(not_liked_keys)
+
+        return [liked_str_keys], [not_liked_str_keys]
     
     def get_user_specific_search_results(self, context):
         """
@@ -181,7 +151,7 @@ class User(AbstractUser):
                 items (list[SearchResult]): prioritized user search results
         """
         # process the liked keywords
-        liked_keywords = self.get_user_liked_keywords()
+        liked_keywords, not_liked_keywords = self.get_user_keywords()
 
         search  = get_search_results(context)
         items   = search['items']
@@ -193,7 +163,8 @@ class User(AbstractUser):
         priority_scores = predict_priority_scores(meta_infos, liked_keywords)
         scores          = generate_order({
             'predictive_score': [score[0] for score in priority_scores.tolist()],
-            # 'relevance_socre' : [],
+            'relevance_score' : get_relevance_score(meta_infos, liked_keywords),
+            'irrelevance_score' : get_relevance_score(meta_infos, not_liked_keywords),
         }, len(items))
         search['items'] = prioritize_results_order(items, scores)
 
@@ -203,15 +174,15 @@ class User(AbstractUser):
         domain = context.get('domain')
 
         # record the site details, if not already recorded
-        existing_site   = Site.objects.filter(domain = domain).filter(route = context.get('route')).first
+        existing_site   = Site.objects.filter(domain = domain).filter(route = context.get('route')).first()
         if existing_site is None:
             site = Site.objects.create(
                 domain = domain,
                 route  = context.get('route'),
                 title  = context.get('title'),
-                keywords =  extract_keywords(context.get('meta', ""))
+                keywords =  extract_keywords(context.get('snippet', "")),
+                description = context.get('snippet', "")
             )
-            site.save()
         else:
             site = existing_site
         
@@ -222,18 +193,34 @@ class User(AbstractUser):
         # create search history record
         search_history = self.search_history.filter(
             site_id = site.id
-        ).first
-        
+        ).first()
+
+        print(search_history, "\n" * 3)
+        feeback = context.get('feedback', False)
         # if their is no previous visits, then create a new one
         if search_history is None:
+            print(self, context)
             search_history = self.search_history.create(
-                query       = context['query'],
+                query       = context.get('query', 'a'),
                 site_id     = site.id,
-                query_keys  = context['query_keys'],
-                is_relevant = context['like_status']
+                query_keys  = list(set(context['query_keys'] + (context['interested_keys'] if feeback else context['not_interested_keys']))),
+                is_relevant = feeback
             )
+        else:
+            search_history.query_keys = list(set(search_history.query_keys + context['query_keys'] + (context['interested_keys'] if feeback else context['not_interested_keys'])))
+            search_history.is_relevant = feeback
+            search_history.save()
 
-        search_history.save()
+        # update the search history record
+        
+        # retrain the search history
+        # retrain_model(
+        #     [f"{context['title']} {context['snippet']}"],
+        #     self.get_user_liked_keywords(),
+        #     1 if feeback else 0
+        # )
+
+        return search_history
 
     def get_user_interest_profiles(self: AbstractUser, query: str):
         query_keys = extract_keywords(query)
@@ -257,5 +244,6 @@ class SearchHistory(models.Model):
     time_spend      = models.PositiveIntegerField(default = 10)
     is_relevant     = models.BooleanField(default = True)
 
-
+    def __str__(self):
+        return f"{self.query} - {self.site.title}"
     

@@ -1,0 +1,526 @@
+query,meta_data,liked_keywords,priority_score
+Artificial intelligence,Simulation of human intelligence processes by machines.,"['technology', 'future']",75
+Quantum mechanics,Description of nature at the smallest scales of energy levels.,"['physics', 'quantum']",60
+Renewable energy,Collection of energy from renewable resources.,"['environment', 'sustainability']",80
+Machine learning,Development of algorithms and models for computers to learn.,"['data', 'algorithm']",85
+World War II,Global war involving many countries from 1939 to 1945.,"['history', 'military']",70
+Climate change,Long-term changes in Earth's climate caused by human activities.,"['environment', 'global warming']",90
+Psychology,Scientific study of the mind and behavior.,"['mind', 'behavior']",80
+Ancient history,Study of human civilizations before the early Middle Ages.,"['civilization', 'archaeology']",65
+Data science,Interdisciplinary field using scientific methods to extract knowledge from data.,"['analytics', 'big data']",75
+Human anatomy,Study of the structure of the human body.,"['biology', 'body']",70
+Space exploration,Investigation and study of outer space.,"['astronomy', 'NASA']",85
+Microeconomics,Study of individual and firm behavior in resource allocation.,"['economics', 'markets']",60
+Political science,"Study of politics, government, and public policy.","['government', 'policy']",75
+Organic chemistry,"Study of the structure, properties, and reactions of organic compounds.","['molecules', 'carbon']",80
+European history,History of the European continent and its peoples.,"['Europe', 'culture']",70
+Computer programming,Process of designing and building computer programs.,"['coding', 'software']",90
+Health and fitness,"State of overall mental, physical, and social well-being.","['exercise', 'nutrition']",85
+Astronomy,Scientific study of celestial objects and phenomena.,"['stars', 'planets']",75
+Civil engineering,"Design, construction, and maintenance of the built environment.","['structures', 'construction']",80
+Cultural anthropology,"Study of human cultures, beliefs, and practices.","['society', 'traditions']",70
+Linguistics,Scientific study of language and its structure.,"['language', 'grammar']",75
+Evolutionary biology,Study of the origin and descent of species.,"['species', 'genetics']",80
+Ancient languages,Study of languages that are no longer spoken.,"['script', 'translation']",70
+Robotics,Design and construction of robots.,"['automation', 'mechanics']",85
+Environmental science,Study of the environment and its problems.,"['ecology', 'pollution']",90
+Philosophy,Study of fundamental questions about existence and knowledge.,"['ethics', 'logic']",80
+Literature,"Written works, especially those considered of superior or lasting artistic merit.","['books', 'poetry']",75
+Sociology,"Study of society, patterns of social relationships, and culture.","['society', 'culture']",70
+Paleontology,Study of prehistoric life through fossils.,"['fossils', 'dinosaurs']",85
+Genetics,"Study of genes, genetic variation, and heredity in organisms.","['DNA', 'inheritance']",80
+Archaeology,Study of human history and prehistory through the excavation of sites and the analysis of artifacts.,"['artifacts', 'excavation']",90
+Mathematics,"Study of numbers, quantities, and shapes.","['numbers', 'geometry']",85
+Economics,"Study of the production, distribution, and consumption of goods and services.","['money', 'markets']",80
+Geography,"Study of the Earth's landscapes, peoples, places, and environments.","['maps', 'landforms']",75
+Physics,"Study of matter, motion, energy, and force.","['energy', 'matter']",70
+Chemistry,"Study of the composition, structure, properties, and changes of matter.","['elements', 'compounds']",85
+Zoology,"Study of animals and their behavior, structure, physiology, and distribution.","['animals', 'organisms']",80
+Botany,"Study of plants, including their structure, properties, and biochemical processes.","['plants', 'ecosystems']",90
+History,"Study of the past, particularly in human affairs.","['events', 'eras']",85
+Neuroscience,"Study of the nervous system, including the brain, spinal cord, and nerves.","['brain', 'nervous system']",80
+Education,Study of the process of teaching and learning.,"['learning', 'teaching']",75
+Architecture,Study of the art and science of designing and constructing buildings.,"['buildings', 'design']",70
+Engineering,"Application of scientific, economic, social, and practical knowledge to invent, design, build, maintain, and improve structures, machines, devices, systems, materials, and processes.","['design', 'technology']",85
+Linguistic anthropology,Study of how language influences social life.,"['language', 'culture']",80
+Marine biology,"Study of marine organisms, their behaviors, and interactions with the environment.","['oceans', 'aquatic life']",85
+Public health,"Study of protecting and improving the health of communities through education, promotion of healthy lifestyles, and research for disease and injury prevention.","['disease', 'prevention']",90
+Geology,"Study of the Earth's physical structure and substance, its history, and the processes that act on it.","['rocks', 'earthquakes']",85
+Philosophy of mind,"Study of the nature of the mind, consciousness, and its relationship to the physical body.","['consciousness', 'brain']",80
+Industrial engineering,"Study of optimizing complex processes or systems by developing, improving, and implementing integrated systems.","['optimization', 'systems']",75
+Art history,Study of objects of art in their historical development and stylistic contexts.,"['art', 'culture']",70
+Game theory,Study of mathematical models of strategic interaction between rational decision-makers.,"['strategic', 'mathematics']",85
+Cybersecurity,"Study of protecting computer systems, networks, and data from cyberattacks.","['security', 'technology']",90
+Fashion design,"Study of the art of applying design, aesthetics, and natural beauty to clothing and its accessories.","['clothing', 'style']",85
+Quantum computing,"Study of using quantum-mechanical phenomena to perform operations on data, revolutionizing computation.","['quantum', 'technology']",80
+Social psychology,"Study of how people's thoughts, feelings, and behaviors are influenced by the actual, imagined, or implied presence of others.","['social behavior', 'interaction']",75
+Urban planning,"Study of the design and regulation of the use of space that focuses on physical, social, and economic aspects of environments.","['city', 'development']",70
+Bioinformatics,"Study of using computational tools to analyze biological data, such as DNA, RNA, and protein sequences.","['computational biology', 'genomics']",85
+Philosophy of science,"Study of the assumptions, foundations, and implications of science.","['scientific method', 'theory']",80
+Criminal psychology,"Study of the thoughts, feelings, intentions, and behaviors of criminals.","['criminal behavior', 'forensic']",75
+Film studies,"Study of film history, film theory, and the critical examination of film as an art form.","['movies', 'cinema']",70
+Operations research,Study of mathematical modeling and optimization of complex systems and processes.,"['mathematics', 'optimization']",85
+Cognitive neuroscience,"Study of the biological processes that underlie cognition, focusing on the neural connections in the brain.","['neuroscience', 'brain']",80
+Environmental ethics,Study of ethical relationships between humans and the environment.,"['ethics', 'environment']",75
+Music theory,Study of the practices and possibilities of music.,"['musical composition', 'harmony']",70
+Cryptography,Study of secure communication techniques in the presence of third parties.,"['encryption', 'security']",85
+Developmental psychology,Study of how people grow and change over time.,"['child development', 'aging']",90
+Civil rights movement,Study of the social movements in the United States aimed at outlawing racial discrimination against African Americans.,"['equality', 'justice']",85
+Media studies,"Study of the history, content, and effects of various media, including television, radio, and the internet.","['communication', 'mass media']",80
+Computer vision,Study of enabling computers to interpret and understand the visual world.,"['image processing', 'AI']",75
+Philosophy of language,"Study of nature, origins, and use of language.","['linguistics', 'semantics']",70
+Industrial design,"Study of the design process and product design, emphasizing the relationship between form, function, and usability.","['product design', 'engineering']",85
+Behavioral economics,Study of psychological insights into human behavior to explain economic decision-making.,"['behavior', 'economics']",80
+Educational psychology,Study of how people learn and the best practices for teaching.,"['learning', 'teaching']",75
+Cultural studies,"Study of cultural phenomena in society, including language, art, literature, and media.","['culture', 'society']",70
+Quantum physics,Study of the fundamental nature of particles and interactions in quantum mechanics.,"['particles', 'interactions']",85
+Human-computer interaction,"Study of the design and use of computer technology, focusing particularly on the interfaces between people and computers.","['technology', 'usability']",90
+Organizational psychology,"Study of behavior within organizations, including workplace dynamics and employee behavior.","['organization', 'workplace']",85
+Archaeoastronomy,Study of how ancient cultures understood phenomena in the sky and how they used astronomy in their cultural practices.,"['ancient civilizations', 'stars']",80
+Biochemistry,Study of chemical processes and substances that occur within living organisms.,"['molecules', 'biology']",75
+Linguistic morphology,Study of the structure of words and their meaningful parts.,"['linguistics', 'language']",70
+Biomechanics,Study of the mechanical aspects of living organisms.,"['biology', 'mechanics']",75
+Cognitive linguistics,Study of how language influences thought.,"['language', 'cognition']",80
+Green chemistry,Study of environmentally friendly chemical processes and products.,"['environment', 'chemistry']",85
+Geopolitics,Study of the effects of geography on politics and international relations.,"['geography', 'politics']",90
+Mathematical logic,Study of formal systems used in mathematics and their logical foundations.,"['mathematics', 'logic']",85
+Robotics engineering,"Study of the design, construction, and use of robots.","['robotics', 'engineering']",80
+Forensic science,Study of applying scientific methods to solve crimes.,"['crime', 'evidence']",75
+Philosophy of mathematics,"Study of the philosophical assumptions, implications, and foundations of mathematics.","['philosophy', 'mathematics']",70
+Quantum field theory,Study of the theoretical framework that combines quantum mechanics with field theory.,"['quantum', 'physics']",85
+Urban sociology,Study of social relationships and structures within urban areas.,"['society', 'urbanization']",90
+Astrophysics,Study of the physical properties and phenomena of celestial objects and the universe.,"['physics', 'cosmology']",85
+Industrial ecology,Study of integrating industry and ecology for sustainable development.,"['industry', 'environment']",80
+Social anthropology,"Study of the cultural, social, and biological aspects of human behavior in social groups.","['society', 'culture']",75
+Medical anthropology,Study of the interaction between culture and health within societies.,"['medicine', 'culture']",70
+Computational chemistry,Study of using computer simulations to understand chemical processes.,"['computational', 'chemistry']",85
+Religious studies,"Study of religious beliefs, behaviors, and institutions.","['religion', 'culture']",90
+String theory,Study of theoretical framework in which the point-like particles of particle physics are replaced by one-dimensional objects.,"['physics', 'quantum']",85
+Development economics,Study of the economic aspects of the development process in low-income countries.,"['economics', 'development']",80
+Information technology,"Study of the use of computer systems to store, retrieve, transmit, and manipulate data.","['computers', 'data']",75
+Human geography,Study of the spatial relationships between humans and their environments.,"['geography', 'society']",70
+Industrial revolution,Study of the transition to new manufacturing processes in the period from about 1760 to sometime between 1820 and 1840.,"['industry', 'history']",85
+Social work,"Study of helping individuals, families, groups, and communities to improve their well-being.","['community', 'counseling']",90
+Algebraic topology,Study of the topological spaces using concepts from abstract algebra.,"['algebra', 'geometry']",85
+Renewable resource management,Study of managing natural resources that can be replenished over time.,"['environment', 'sustainability']",80
+Cultural geography,Study of cultural products and norms and their variations across and relations to spaces and places.,"['culture', 'geography']",75
+Aerospace engineering,Study of the design and construction of aircraft and spacecraft.,"['aerospace', 'engineering']",70
+Food science,"Study of the physical, biological, and chemical makeup of food and the principles underlying food processing.","['nutrition', 'biology']",85
+Quantum chemistry,Study of the application of quantum mechanics to chemical systems.,"['quantum', 'chemistry']",90
+Economic geography,"Study of the location, distribution, and spatial organization of economic activities across the world.","['geography', 'economics']",85
+Cell biology,"Study of the structure, function, and behavior of cells, the basic units of life.","['biology', 'cells']",80
+Ethics in business,Study of moral principles and values in the context of business decision-making.,"['business', 'ethics']",75
+Architectural history,Study of the evolution of architecture through history.,"['architecture', 'history']",70
+Behavioral ecology,Study of the evolutionary basis for animal behavior due to ecological pressures.,"['behavior', 'ecology']",85
+Avengers: Endgame,"Movie directed by the Russo brothers, part of the Marvel Cinematic Universe.","['movies', 'superheroes']",70
+Fortnite,Popular online multiplayer battle royale game developed by Epic Games.,"['video games', 'multiplayer']",75
+Taylor Swift,American singer-songwriter known for her country and pop music.,"['music', 'singer']",80
+Paris,"Capital city of France known for its art, fashion, and culture.","['France', 'travel']",85
+The Witcher,Fantasy series based on the book and game series of the same name.,"['fantasy', 'TV series']",90
+Minecraft,Sandbox video game that allows players to build with a variety of different blocks.,"['video games', 'building']",85
+Ed Sheeran,"British singer-songwriter known for his hits like ""Shape of You"" and ""Thinking Out Loud.""","['music', 'singer']",80
+New York City,"Major city in the United States known for its culture, arts, and landmarks.","['USA', 'travel']",75
+Stranger Things,Science fiction-horror web television series on Netflix.,"['TV series', 'science fiction']",70
+Call of Duty,Popular video game franchise known for its first-person shooter games.,"['video games', 'shooting']",85
+Ariana Grande,American singer and actress known for her powerful vocals and pop hits.,"['music', 'singer']",90
+Tokyo,Capital city of Japan known for its modern and traditional culture.,"['Japan', 'travel']",85
+The Mandalorian,Space Western television series set in the Star Wars universe.,"['TV series', 'sci-fi']",80
+FIFA 22,Latest installment of the popular football video game series.,"['video games', 'sports']",75
+Beyoncé,"American singer, songwriter, and actress known for her powerful voice and stage presence.","['music', 'singer']",70
+Rome,"Capital city of Italy known for its rich history, art, and architecture.","['Italy', 'travel']",85
+Black Mirror,"Anthology television series that explores a twisted, high-tech multiverse.","['TV series', 'sci-fi']",90
+Among Us,Online multiplayer party game where players work together to complete tasks.,"['video games', 'multiplayer']",85
+Drake,"Canadian rapper, singer, and songwriter known for his chart-topping hits.","['music', 'rapper']",80
+London,"Capital city of England known for its history, culture, and landmarks.","['England', 'travel']",75
+The Office,Mockumentary sitcom television series set in an office environment.,"['TV series', 'comedy']",70
+Overwatch,Team-based multiplayer first-person shooter game developed by Blizzard Entertainment.,"['video games', 'shooter']",85
+Billie Eilish,American singer-songwriter known for her unique musical style and haunting voice.,"['music', 'singer']",90
+Barcelona,Capital city of Catalonia in Spain known for its art and architecture.,"['Spain', 'travel']",85
+Breaking Bad,Crime drama television series about a high school chemistry teacher turned methamphetamine manufacturer.,"['TV series', 'drama']",80
+League of Legends,Multiplayer online battle arena video game developed and published by Riot Games.,"['video games', 'MOBA']",75
+Post Malone,"American rapper, singer, and songwriter known for his genre-blending music.","['music', 'rapper']",70
+Sydney,"Capital city of New South Wales, Australia known for its Sydney Opera House and Harbour Bridge.","['Australia', 'travel']",85
+Friends,Sitcom television series about six friends living in New York City.,"['TV series', 'comedy']",90
+Avengers: Endgame,"Movie directed by the Russo brothers, part of the Marvel Cinematic Universe.","['movies', 'superheroes']",70
+Fortnite,Popular online multiplayer battle royale game developed by Epic Games.,"['video games', 'multiplayer']",75
+Taylor Swift,American singer-songwriter known for her country and pop music.,"['music', 'singer']",80
+Paris,"Capital city of France known for its art, fashion, and culture.","['France', 'travel']",85
+The Witcher,Fantasy series based on the book and game series of the same name.,"['fantasy', 'TV series']",90
+Harry Potter,"Fantasy book and film series about a young wizard, Harry Potter.","['fantasy', 'books']",70
+Animal Crossing,Life simulation video game series where players live in a village with anthropomorphic animals.,"['video games', 'simulation']",75
+Taylor Swift songs,"Search for songs by Taylor Swift, an American singer-songwriter.","['music', 'singer']",80
+Hawaii,"U.S. state located in the Pacific Ocean, known for its tropical climate and natural beauty.","['USA', 'travel']",85
+Marvel movies,"Search for movies in the Marvel Cinematic Universe, known for its superhero films.","['movies', 'superheroes']",90
+Zelda,Fantasy video game series developed by Nintendo.,"['video games', 'adventure']",85
+Pop music,Genre of popular music characterized by upbeat rhythms and catchy melodies.,"['music', 'genre']",80
+Dubai,"City in the United Arab Emirates known for luxury shopping, ultramodern architecture, and a lively nightlife scene.","['UAE', 'travel']",75
+Star Wars,Epic space opera media franchise created by George Lucas.,"['movies', 'sci-fi']",70
+The Sims,Life simulation video game series where players create and control virtual people.,"['video games', 'simulation']",85
+Eminem,"American rapper, songwriter, and record producer known for his fast flow and controversial lyrics.","['music', 'rapper']",90
+Greece,"Country in southeastern Europe known for its ancient history, stunning islands, and Mediterranean cuisine.","['Europe', 'travel']",85
+Game of Thrones,Fantasy television series based on the books by George R. R. Martin.,"['TV series', 'fantasy']",80
+Super Mario,Platform video game series created by Nintendo.,"['video games', 'platformer']",75
+Adele,British singer-songwriter known for her powerful vocals and emotionally resonant songs.,"['music', 'singer']",70
+Thailand,"Country in Southeast Asia known for its tropical beaches, opulent royal palaces, and ancient ruins.","['Asia', 'travel']",85
+The Simpsons,Animated sitcom television series that satirically portrays the middle class American lifestyle.,"['TV series', 'comedy']",90
+Pokémon,"Franchise created by Satoshi Tajiri that includes video games, trading card games, and a TV series.","['video games', 'anime']",85
+Coldplay,British rock band known for their melodic pop-rock songs.,"['music', 'band']",80
+Brazil,"Country in South America known for its diverse culture, music, and the Amazon rainforest.","['South America', 'travel']",75
+The Big Bang Theory,Sitcom television series that follows the lives of a group of scientists and their interactions with others.,"['TV series', 'comedy']",70
+Minecraft tips,"Tips and tricks for playing Minecraft, a popular sandbox game.","['video games', 'tips']",85
+Lady Gaga,"American singer, songwriter, and actress known for her flamboyant costumes and powerful vocals.","['music', 'singer']",90
+China,"Country in East Asia known for its ancient civilization, modern cities, and diverse landscapes.","['Asia', 'travel']",85
+Friends episodes,Search for episodes of the sitcom television series Friends.,"['TV series', 'comedy']",80
+Mario Kart,Racing video game series featuring characters from the Mario franchise.,"['video games', 'racing']",75
+Beyoncé songs,"Search for songs by Beyoncé, an American singer-songwriter.","['music', 'singer']",70
+Spain,"Country in southwestern Europe known for its rich cultural history, vibrant cities, and beautiful beaches.","['Europe', 'travel']",85
+Stranger Things cast,Search for information about the cast of the television series Stranger Things.,"['TV series', 'cast']",90
+Disney movies,Search for animated and live-action movies produced by Disney.,"['movies', 'animation']",70
+LEGO,Search for LEGO building sets and toys.,"['toys', 'building']",75
+Cartoon Network,Search for cartoons and animated shows on the Cartoon Network channel.,"['cartoons', 'TV shows']",80
+Dinosaur facts,Search for information and facts about dinosaurs.,"['dinosaurs', 'prehistoric']",85
+SpongeBob SquarePants,Search for episodes and characters from the animated television series SpongeBob SquarePants.,"['TV shows', 'cartoons']",90
+Minecraft animals,Search for animals and creatures in the game Minecraft.,"['video games', 'animals']",85
+Nursery rhymes,Search for popular nursery rhymes and children's songs.,"['songs', 'rhymes']",80
+Disney princesses,Search for information and images of Disney princess characters.,"['Disney', 'characters']",75
+Super Mario characters,Search for characters from the Super Mario video game series.,"['video games', 'characters']",70
+Kids jokes,Search for funny jokes and riddles suitable for children.,"['jokes', 'humor']",85
+Pokémon games,Search for Pokémon video games and trading card games.,"['video games', 'cards']",90
+Animal videos,Search for videos of cute and funny animals.,"['animals', 'videos']",85
+Coloring pages,"Search for printable coloring pages of animals, cartoons, and more.","['coloring', 'activities']",80
+Disney Channel shows,Search for television shows and series on the Disney Channel.,"['TV shows', 'Disney']",75
+Space facts,Search for interesting facts and information about space and planets.,"['space', 'astronomy']",70
+LEGO Star Wars,Search for LEGO sets and toys based on the Star Wars franchise.,"['LEGO', 'Star Wars']",85
+Children's books,Search for popular children's books and authors.,"['books', 'reading']",90
+Magic tricks,Search for easy magic tricks and illusions for kids.,"['magic', 'tricks']",85
+Disney Junior,Search for shows and programs on the Disney Junior channel.,"['TV shows', 'Disney Junior']",80
+Kids crafts,Search for fun and easy craft ideas for kids.,"['crafts', 'activities']",75
+Paw Patrol,Search for episodes and characters from the animated series Paw Patrol.,"['TV shows', 'cartoons']",70
+Science experiments,Search for simple and safe science experiments for kids.,"['science', 'experiments']",85
+Baby animals,Search for pictures and videos of adorable baby animals.,"['animals', 'cute']",90
+Disney songs,Search for songs from Disney movies and shows.,"['Disney', 'music']",85
+Kids cooking,Search for easy and kid-friendly cooking recipes and videos.,"['cooking', 'recipes']",80
+PJ Masks,Search for episodes and characters from the animated series PJ Masks.,"['TV shows', 'cartoons']",75
+Educational games,Search for educational games and apps for kids.,"['games', 'learning']",70
+Sesame Street,Search for episodes and characters from the educational television series Sesame Street.,"['TV shows', 'education']",85
+Disney Pixar movies,Search for animated movies produced by Disney Pixar.,"['movies', 'animation']",90
+Solar system,Search for information about the planets and the solar system.,"['space', 'planets']",70
+Toy Story,Search for information about the Toy Story movies.,"['movies', 'animation']",70
+LEGO Ninjago,Search for LEGO sets and toys based on the Ninjago theme.,"['toys', 'building']",75
+Kids cartoons,Search for popular cartoons and animated series for children.,"['cartoons', 'TV shows']",80
+Animal facts for kids,Search for fun and interesting facts about animals.,"['dinosaurs', 'prehistoric']",85
+Disney Channel games,Search for online games featuring Disney characters.,"['video games', 'multiplayer']",90
+Art and craft ideas for kids,Search for creative art and craft projects for children.,"['crafts', 'activities']",85
+Disneyland,Search for information about Disneyland theme parks.,"['USA', 'travel']",80
+Nintendo Switch games for kids,Search for family-friendly games for the Nintendo Switch console.,"['video games', 'family']",75
+Children's songs with lyrics,Search for lyrics to popular children's songs.,"['songs', 'children']",70
+Learning games for toddlers,Search for educational games suitable for toddlers.,"['games', 'learning']",85
+Disney Junior shows,Search for shows and series on the Disney Junior channel.,"['TV shows', 'Disney Junior']",90
+Animal sounds for kids,Search for videos or apps that play animal sounds.,"['animals', 'sounds']",85
+LEGO Friends,Search for LEGO sets and toys from the LEGO Friends theme.,"['toys', 'building']",80
+Kids yoga,Search for yoga videos or classes designed for children.,"['exercise', 'yoga']",75
+Disneyland rides,Search for information about rides and attractions at Disneyland.,"['attractions', 'themepark']",70
+Nintendo games for kids,Search for Nintendo games suitable for kids.,"['video games', 'Nintendo']",85
+Children's books online,Search for websites where you can read children's books online.,"['books', 'reading']",90
+Magic tricks,Search for easy magic tricks and illusions for kids.,"['magic', 'tricks']",85
+Disney Junior,Search for shows and programs on the Disney Junior channel.,"['TV shows', 'Disney']",80
+Kids crafts,Search for fun and easy craft ideas for kids.,"['crafts', 'activities']",75
+Paw Patrol,Search for episodes and characters from the animated series Paw Patrol.,"['TV shows', 'cartoons']",70
+Science experiments,Search for simple and safe science experiments for kids.,"['science', 'experiments']",85
+Baby animals,Search for pictures and videos of adorable baby animals.,"['animals', 'cute']",90
+Disney songs,Search for songs from Disney movies and shows.,"['songs', 'Disney']",85
+Kids cooking,Search for easy and kid-friendly cooking recipes and videos.,"['cooking', 'recipes']",80
+PJ Masks,Search for episodes and characters from the animated series PJ Masks.,"['TV shows', 'cartoons']",75
+Educational games,Search for educational games and apps for kids.,"['games', 'learning']",70
+Sesame Street,Search for episodes and characters from the educational television series Sesame Street.,"['TV shows', 'education']",85
+Disney Pixar movies,Search for animated movies produced by Disney Pixar.,"['movies', 'animation']",90
+Kids songs,Search for popular and educational songs for children.,"['songs', 'children']",85
+Animal habitats,Search for information about where animals live and their habitats.,"['animals', 'habitats']",80
+Thomas and Friends,Search for episodes and characters from the animated series Thomas and Friends.,"['TV shows', 'cartoons']",75
+Solar system,Search for information about the planets and the solar system.,"['space', 'planets']",70
+Toy Story characters,Search for information about characters from the Toy Story movies.,"['movies', 'characters']",85
+LEGO Minecraft,Search for LEGO sets and toys based on the Minecraft video game.,"['toys', 'building']",90
+Kids movies on Netflix,Search for family-friendly movies available on Netflix.,"['movies', 'streaming']",85
+Fun science facts for kids,Search for fun and interesting science facts for children.,"['science', 'facts']",80
+Disney games online,Search for online games featuring Disney characters.,"['video games', 'Disney']",75
+Kids jokes and riddles,Search for funny jokes and riddles suitable for children.,"['jokes', 'humor']",70
+Animal videos for toddlers,Search for videos of animals suitable for toddlers.,"['animals', 'videos']",85
+LEGO City sets,Search for LEGO sets and toys from the LEGO City theme.,"['toys', 'building']",90
+Kids dance classes,Search for dance classes or tutorials for children.,"['dance', 'classes']",85
+Disney princess movies,Search for movies featuring Disney princess characters.,"['movies', 'Disney']",80
+Kids educational videos,Search for educational videos for children.,"['videos', 'learning']",75
+Animal coloring pages printable,Search for printable coloring pages of animals.,"['coloring', 'activities']",70
+LEGO Star Wars sets,Search for LEGO sets and toys from the Star Wars theme.,"['toys', 'building']",85
+Kids science experiments at home,Search for easy science experiments that can be done at home.,"['science', 'experiments']",90
+Disney characters list,Search for a list of Disney characters from movies and shows.,"['Disney', 'characters']",85
+Kids cooking classes,Search for cooking classes or tutorials for kids.,"['cooking', 'classes']",80
+LEGO Friends sets,Search for LEGO sets and toys from the LEGO Friends theme.,"['toys', 'building']",75
+Kids karaoke songs,Search for karaoke songs suitable for children.,"['music', 'karaoke']",70
+Disney Channel shows list,Search for a list of shows and series on the Disney Channel.,"['TV shows', 'Disney Channel']",85
+Kids science projects,Search for science projects and experiments for kids.,"['science', 'projects']",90
+Animal sounds app,Search for apps that play animal sounds for kids.,"['animals', 'apps']",85
+LEGO Ninjago sets,Search for LEGO sets and toys from the Ninjago theme.,"['toys', 'building']",80
+Kids bedtime stories,Search for bedtime stories and fairy tales for children.,"['stories', 'bedtime']",75
+Disney coloring pages,Search for printable coloring pages featuring Disney characters.,"['coloring', 'Disney']",70
+Kids exercise videos,Search for exercise videos designed for children.,"['exercise', 'videos']",85
+LEGO Harry Potter sets,Search for LEGO sets and toys from the Harry Potter theme.,"['toys', 'building']",90
+Kids learning apps,Search for educational apps for kids.,"['apps', 'learning']",85
+Disney princess dress up games,Search for online dress-up games featuring Disney princesses.,"['games', 'Disney']",80
+Kids magic tricks,Search for easy magic tricks and illusions for kids.,"['magic', 'tricks']",75
+LEGO Batman sets,Search for LEGO sets and toys from the Batman theme.,"['toys', 'building']",70
+Kids virtual tours,Search for virtual tours of museums and landmarks for children.,"['virtual tours', 'kids']",85
+Animal facts for preschoolers,Search for fun and educational animal facts for preschool-aged children.,"['animals', 'facts']",90
+Disney movie marathon,Search for a list of Disney movies to watch in a marathon.,"['movies', 'Disney']",85
+Kids outdoor activities,Search for outdoor activities and games for kids.,"['activities', 'outdoors']",80
+LEGO Marvel sets,Search for LEGO sets and toys from the Marvel theme.,"['toys', 'building']",75
+Kids music classes,Search for music classes or tutorials for children.,"['music', 'classes']",70
+Disney Pixar movies list,Search for a list of animated movies produced by Disney Pixar.,"['movies', 'animation']",85
+Kids science books,Search for science books and stories for kids.,"['books', 'science']",90
+Animal coloring sheets,Search for printable coloring sheets of animals.,"['coloring', 'animals']",85
+LEGO Technic sets,Search for LEGO sets and toys from the Technic theme.,"['toys', 'building']",80
+Kids educational shows,Search for educational shows and series for children.,"['TV shows', 'education']",75
+Disney movies for toddlers,Search for Disney movies suitable for toddlers.,"['movies', 'Disney']",70
+Kids yoga videos,Search for yoga videos for children.,"['exercise', 'yoga']",85
+LEGO architecture sets,Search for LEGO sets and toys from the Architecture theme.,"['toys', 'building']",90
+What is diabetes,"Search for information about diabetes, a medical condition characterized by high blood sugar levels.","['diabetes', 'health']",70
+Symptoms of flu,"Search for the symptoms of the flu, a common viral infection that affects the respiratory system.","['flu', 'symptoms']",75
+Treatment for migraine,"Search for treatments and remedies for migraines, a type of headache characterized by severe pain.","['migraine', 'treatment']",80
+Causes of high blood pressure,"Search for the causes of high blood pressure, a condition where the force of blood against the artery walls is too high.","['hypertension', 'causes']",85
+How to prevent heart disease,"Search for ways to prevent heart disease, a condition that affects the heart's ability to function properly.","['heart disease', 'prevention']",90
+Symptoms of arthritis,"Search for the symptoms of arthritis, a condition that causes joint inflammation and pain.","['arthritis', 'symptoms']",85
+Treatment for asthma,"Search for treatments and management strategies for asthma, a condition that affects the airways in the lungs.","['asthma', 'treatment']",80
+What is pneumonia,"Search for information about pneumonia, a lung infection that can be caused by bacteria, viruses, or fungi.","['pneumonia', 'health']",75
+Symptoms of diabetes,"Search for the symptoms of diabetes, including increased thirst, frequent urination, and fatigue.","['diabetes', 'symptoms']",70
+Treatment for depression,"Search for treatments for depression, a mental health disorder characterized by persistent sadness and loss of interest.","['depression', 'treatment']",85
+Causes of cancer,"Search for the causes of cancer, a group of diseases characterized by the uncontrolled growth and spread of abnormal cells.","['cancer', 'causes']",90
+How to prevent diabetes,"Search for ways to prevent diabetes, including lifestyle changes and dietary modifications.","['diabetes', 'prevention']",85
+Symptoms of heart attack,"Search for the symptoms of a heart attack, including chest pain, shortness of breath, and nausea.","['heart attack', 'symptoms']",80
+Treatment for back pain,"Search for treatments for back pain, a common condition that can be caused by injury, muscle strain, or underlying health issues.","['back pain', 'treatment']",75
+What is Alzheimer's disease,"Search for information about Alzheimer's disease, a progressive neurodegenerative disorder.","['Alzheimer's', 'health']",80
+Symptoms of anxiety,"Search for the symptoms of anxiety, including nervousness, fear, and rapid heart rate.","['anxiety', 'symptoms']",85
+Treatment for allergies,"Search for treatments for allergies, including medication and lifestyle changes.","['allergies', 'treatment']",90
+Causes of stroke,"Search for the causes of a stroke, a medical emergency that occurs when blood flow to the brain is disrupted.","['stroke', 'causes']",85
+How to prevent osteoporosis,"Search for ways to prevent osteoporosis, a condition characterized by weak and brittle bones.","['osteoporosis', 'prevention']",80
+Symptoms of COPD,"Search for the symptoms of chronic obstructive pulmonary disease (COPD), a chronic inflammatory lung disease.","['COPD', 'symptoms']",75
+Treatment for hypertension,"Search for treatments for hypertension (high blood pressure), including medication and lifestyle changes.","['hypertension', 'treatment']",70
+What is arthritis,"Search for information about arthritis, a common condition that causes joint pain and inflammation.","['arthritis', 'health']",85
+Symptoms of asthma,"Search for the symptoms of asthma, including wheezing, shortness of breath, and chest tightness.","['asthma', 'symptoms']",90
+Treatment for diabetes,"Search for treatments for diabetes, including medication, insulin therapy, and lifestyle changes.","['diabetes', 'treatment']",85
+Causes of depression,"Search for the causes of depression, including genetic, biological, environmental, and psychological factors.","['depression', 'causes']",80
+How to prevent cancer,"Search for ways to prevent cancer, including healthy lifestyle choices and regular screenings.","['cancer', 'prevention']",75
+Symptoms of pneumonia,"Search for the symptoms of pneumonia, including cough, fever, and difficulty breathing.","['pneumonia', 'symptoms']",70
+Treatment for Alzheimer's,"Search for treatments for Alzheimer's disease, including medication and cognitive therapy.","['Alzheimer's', 'treatment']",85
+What is anxiety,"Search for information about anxiety, a mental health condition characterized by feelings of worry or fear.","['anxiety', 'health']",90
+Symptoms of allergies,"Search for the symptoms of allergies, including sneezing, itching, and runny nose.","['allergies', 'symptoms']",85
+Treatment for stroke,"Search for treatments for stroke, including medication, rehabilitation, and surgery.","['stroke', 'treatment']",80
+Causes of osteoporosis,"Search for the causes of osteoporosis, including hormonal changes, lack of calcium, and vitamin D deficiency.","['osteoporosis', 'causes']",75
+How to prevent COPD,"Search for ways to prevent chronic obstructive pulmonary disease (COPD), including avoiding smoking and air pollutants.","['COPD', 'prevention']",70
+Symptoms of hypertension,"Search for the symptoms of hypertension (high blood pressure), including headaches, shortness of breath, and chest pain.","['hypertension', 'symptoms']",85
+Treatment for arthritis,"Search for treatments for arthritis, including medication, physical therapy, and lifestyle changes.","['arthritis', 'treatment']",90
+What is back pain,"Search for information about back pain, a common condition that can be caused by various factors.","['back pain', 'health']",85
+Symptoms of Alzheimer's,"Search for the symptoms of Alzheimer's disease, including memory loss, confusion, and difficulty in communication.","['Alzheimer's', 'symptoms']",80
+Treatment for anxiety,"Search for treatments for anxiety, including therapy and medication.","['anxiety', 'treatment']",75
+Causes of allergies,"Search for the causes of allergies, including genetics and environmental factors.","['allergies', 'causes']",70
+How to prevent stroke,"Search for ways to prevent stroke, including managing high blood pressure and maintaining a healthy lifestyle.","['stroke', 'prevention']",85
+Symptoms of osteoporosis,"Search for the symptoms of osteoporosis, including back pain, loss of height, and bone fractures.","['osteoporosis', 'symptoms']",90
+Treatment for COPD,"Search for treatments for chronic obstructive pulmonary disease (COPD), including bronchodilators and steroids.","['COPD', 'treatment']",85
+Causes of hypertension,"Search for the causes of hypertension (high blood pressure), including genetic factors and lifestyle choices.","['hypertension', 'causes']",80
+How to prevent arthritis,"Search for ways to prevent arthritis, including maintaining a healthy weight and regular exercise.","['arthritis', 'prevention']",75
+History of India,"Search for information about the history of India, including ancient civilizations, empires, and independence movement.","['India', 'history']",70
+Ancient Indian civilizations,"Search for information about ancient Indian civilizations, such as the Indus Valley Civilization and Vedic period.","['Indian civilizations', 'ancient']",75
+Mughal Empire history,"Search for information about the history of the Mughal Empire in India, including rulers, culture, and architecture.","['Mughal Empire', 'history']",80
+Independence movement of India,"Search for information about the independence movement of India, including key events and leaders.","['independence movement', 'India']",85
+History of Hinduism,"Search for information about the history of Hinduism, one of the oldest religions in the world.","['Hinduism', 'history']",90
+Gupta Empire history,"Search for information about the history of the Gupta Empire in India, known for its golden age of arts and sciences.","['Gupta Empire', 'history']",85
+British Raj in India history,"Search for information about the history of the British Raj in India, the period of British rule from 1858 to 1947.","['British Raj', 'history']",80
+Ancient Indian art and architecture,"Search for information about ancient Indian art and architecture, including temples, sculptures, and paintings.","['Indian art', 'architecture']",75
+History of Buddhism in India,"Search for information about the history of Buddhism in India, including its origins, spread, and impact.","['Buddhism', 'history']",70
+Maurya Empire history,"Search for information about the history of the Maurya Empire in India, known for Emperor Ashoka and the spread of Buddhism.","['Maurya Empire', 'history']",85
+Indian freedom fighters,Search for information about Indian freedom fighters who played a key role in the country's independence struggle.,"['freedom fighters', 'India']",90
+History of Sikhism,"Search for information about the history of Sikhism, a monotheistic religion founded in the 15th century in the Punjab region.","['Sikhism', 'history']",85
+Vijayanagara Empire history,"Search for information about the history of the Vijayanagara Empire in South India, known for its cultural and architectural achievements.","['Vijayanagara Empire', 'history']",80
+Indian independence leaders,"Search for information about Indian independence leaders, including Mahatma Gandhi, Jawaharlal Nehru, and Subhas Chandra Bose.","['independence leaders', 'India']",75
+History of the Indian Ocean trade,"Search for information about the history of the Indian Ocean trade, including its role in connecting cultures and economies.","['Indian Ocean trade', 'history']",70
+Chola Empire history,"Search for information about the history of the Chola Empire in South India, known for its naval power and cultural achievements.","['Chola Empire', 'history']",85
+Impact of British colonization in India,"Search for information about the impact of British colonization in India, including economic, social, and cultural changes.","['British colonization', 'India']",90
+History of the Indus Valley Civilization,"Search for information about the history of the Indus Valley Civilization, one of the world's oldest urban civilizations.","['Indus Valley Civilization', 'history']",85
+Indian cultural heritage,"Search for information about Indian cultural heritage, including art, music, dance, and literature.","['cultural heritage', 'India']",80
+History of the Maratha Empire,"Search for information about the history of the Maratha Empire in India, known for its expansion and administration.","['Maratha Empire', 'history']",75
+Ashoka the Great,"Search for information about Ashoka the Great, an ancient Indian emperor of the Maurya Dynasty known for his conversion to Buddhism.","['Ashoka', 'history']",70
+Indian architectural styles,"Search for information about Indian architectural styles, including Hindu, Buddhist, Islamic, and colonial influences.","['architectural styles', 'India']",85
+History of Indian literature,"Search for information about the history of Indian literature, including Sanskrit literature, poetry, and epics.","['Indian literature', 'history']",90
+Indo-Greek Kingdom history,"Search for information about the history of the Indo-Greek Kingdom, a Hellenistic kingdom covering parts of present-day Afghanistan and Pakistan.","['Indo-Greek Kingdom', 'history']",85
+Influence of Indian philosophy,"Search for information about the influence of Indian philosophy on world thought, including concepts such as karma, dharma, and yoga.","['Indian philosophy', 'influence']",80
+History of the Delhi Sultanate,"Search for information about the history of the Delhi Sultanate, a Muslim kingdom that ruled parts of India from the 13th to 16th centuries.","['Delhi Sultanate', 'history']",75
+Women in ancient India,"Search for information about the role of women in ancient Indian society, including their rights, duties, and social status.","['women in India', 'history']",70
+Indian classical music history,"Search for information about the history of Indian classical music, including Hindustani and Carnatic traditions.","['classical music', 'India']",85
+History of the Rajputs,"Search for information about the history of the Rajputs, a warrior caste in India known for their valor and chivalry.","['Rajputs', 'history']",90
+Impact of Indian textiles,"Search for information about the impact of Indian textiles on global trade and fashion, including fabrics like silk and cotton.","['Indian textiles', 'impact']",85
+History of Indian cinema,"Search for information about the history of Indian cinema, including Bollywood, regional cinema, and influential filmmakers.","['Indian cinema', 'history']",80
+Architecture of ancient Indian temples,"Search for information about the architecture of ancient Indian temples, including structural features and artistic elements.","['Indian temples', 'architecture']",75
+Influence of Indian cuisine,"Search for information about the influence of Indian cuisine on global food culture, including spices, flavors, and cooking techniques.","['Indian cuisine', 'influence']",70
+History of Indian mathematics,"Search for information about the history of Indian mathematics, including contributions to algebra, geometry, and trigonometry.","['Indian mathematics', 'history']",85
+Decline of the Maurya Empire,"Search for information about the decline of the Maurya Empire in India, including factors such as internal conflicts and invasions.","['Maurya Empire', 'decline']",90
+Influence of Indian art,"Search for information about the influence of Indian art on global art movements, including sculpture, painting, and architecture.","['Indian art', 'influence']",85
+History of the Gupta Dynasty,"Search for information about the history of the Gupta Dynasty in India, known for its contributions to art, science, and literature.","['Gupta Dynasty', 'history']",80
+Trade routes in ancient India,"Search for information about trade routes in ancient India, including the Silk Road, Spice Route, and maritime trade routes.","['trade routes', 'India']",75
+Influence of Indian spices,"Search for information about the influence of Indian spices on global cuisine and trade, including spices like cardamom, turmeric, and cumin.","['Indian spices', 'influence']",70
+History of Indian education,"Search for information about the history of education in India, including ancient gurukul systems and modern education reforms.","['Indian education', 'history']",85
+Artifacts of ancient India,"Search for information about artifacts of ancient India, including pottery, sculptures, coins, and relics of ancient civilizations.","['artifacts', 'India']",90
+Influence of Indian dance forms,"Search for information about the influence of Indian dance forms, such as Bharatanatyam and Kathak, on global dance traditions.","['Indian dance forms', 'influence']",85
+History of Indian textiles,"Search for information about the history of Indian textiles, including traditional weaving techniques and regional fabrics.","['Indian textiles', 'history']",80
+Significance of Indian epics,Search for information about the significance of Indian epics like the Ramayana and Mahabharata in literature and culture.,"['Indian epics', 'significance']",75
+Influence of Indian spices,"Search for information about the influence of Indian spices on global cuisine and trade, including spices like cardamom, turmeric, and cumin.","['Indian spices', 'influence']",70
+History of Indian education,"Search for information about the history of education in India, including ancient gurukul systems and modern education reforms.","['Indian education', 'history']",85
+Artifacts of ancient India,"Search for information about artifacts of ancient India, including pottery, sculptures, coins, and relics of ancient civilizations.","['artifacts', 'India']",90
+Influence of Indian dance forms,"Search for information about the influence of Indian dance forms, such as Bharatanatyam and Kathak, on global dance traditions.","['Indian dance forms', 'influence']",85
+History of Indian textiles,"Search for information about the history of Indian textiles, including traditional weaving techniques and regional fabrics.","['Indian textiles', 'history']",80
+Significance of Indian epics,Search for information about the significance of Indian epics like the Ramayana and Mahabharata in literature and culture.,"['Indian epics', 'significance']",75
+Influence of Indian spices,"Search for information about the influence of Indian spices on global cuisine and trade, including spices like cardamom, turmeric, and cumin.","['Indian spices', 'influence']",70
+History of Indian education,"Search for information about the history of education in India, including ancient gurukul systems and modern education reforms.","['Indian education', 'history']",85
+Artifacts of ancient India,"Search for information about artifacts of ancient India, including pottery, sculptures, coins, and relics of ancient civilizations.","['artifacts', 'India']",90
+Influence of Indian dance forms,"Search for information about the influence of Indian dance forms, such as Bharatanatyam and Kathak, on global dance traditions.","['Indian dance forms', 'influence']",85
+History of Indian textiles,"Search for information about the history of Indian textiles, including traditional weaving techniques and regional fabrics.","['Indian textiles', 'history']",80
+Significance of Indian epics,Search for information about the significance of Indian epics like the Ramayana and Mahabharata in literature and culture.,"['Indian epics', 'significance']",75
+Lord Shiva,"Search for information about Lord Shiva, one of the principal deities of Hinduism, known as the destroyer.","['Shiva', 'Hindu god']",70
+Goddess Lakshmi,"Search for information about Goddess Lakshmi, the Hindu goddess of wealth, fortune, and prosperity.","['Lakshmi', 'Hindu goddess']",75
+Lord Vishnu,"Search for information about Lord Vishnu, one of the principal deities of Hinduism, known as the preserver.","['Vishnu', 'Hindu god']",80
+Lord Krishna,"Search for information about Lord Krishna, a major deity in Hinduism, known for his role in the Mahabharata.","['Krishna', 'Hindu god']",85
+Goddess Durga,"Search for information about Goddess Durga, a principal and popular form of Hindu goddess.","['Durga', 'Hindu goddess']",90
+Lord Rama,"Search for information about Lord Rama, a major deity in Hinduism, known as the seventh avatar of Vishnu.","['Rama', 'Hindu god']",85
+Lord Ganesha,"Search for information about Lord Ganesha, the Hindu god of beginnings, remover of obstacles, and wisdom.","['Ganesha', 'Hindu god']",80
+Goddess Saraswati,"Search for information about Goddess Saraswati, the Hindu goddess of knowledge, music, arts, and learning.","['Saraswati', 'Hindu goddess']",75
+Lord Hanuman,"Search for information about Lord Hanuman, a divine monkey god and devotee of Lord Rama in Hinduism.","['Hanuman', 'Hindu god']",70
+Goddess Parvati,"Search for information about Goddess Parvati, the Hindu goddess of fertility, love, and devotion.","['Parvati', 'Hindu goddess']",85
+Lord Brahma,"Search for information about Lord Brahma, one of the principal deities of Hinduism, known as the creator.","['Brahma', 'Hindu god']",90
+Goddess Kali,"Search for information about Goddess Kali, a fierce Hindu goddess associated with empowerment and time.","['Kali', 'Hindu goddess']",85
+Lord Murugan,"Search for information about Lord Murugan, the Hindu god of war and victory, also known as Kartikeya.","['Murugan', 'Hindu god']",80
+Goddess Radha,"Search for information about Goddess Radha, the consort of Lord Krishna and a symbol of divine love.","['Radha', 'Hindu goddess']",75
+Lord Shiva family,"Search for information about Lord Shiva's family, including his consort Parvati, sons Ganesha and Kartikeya, and other relatives.","['Shiva family', 'Hindu gods']",70
+Goddess Sita,"Search for information about Goddess Sita, the consort of Lord Rama and an embodiment of wifely virtue and devotion.","['Sita', 'Hindu goddess']",85
+Lord Krishna and Radha,Search for information about the relationship between Lord Krishna and Goddess Radha in Hindu mythology.,"['Krishna Radha', 'Hindu gods']",90
+Goddess Kali puja,"Search for information about Kali Puja, a Hindu festival dedicated to the worship of Goddess Kali.","['Kali Puja', 'Hindu festival']",85
+Lord Shiva Lingam,"Search for information about the Shiva Lingam, a symbol representing Lord Shiva in Hinduism.","['Shiva Lingam', 'Hinduism']",80
+Goddess Lakshmi puja,"Search for information about Lakshmi Puja, a Hindu ritual performed to invoke the blessings of Goddess Lakshmi.","['Lakshmi Puja', 'Hindu ritual']",75
+Lord Vishnu avatars,"Search for information about the avatars (incarnations) of Lord Vishnu, such as Rama, Krishna, and Varaha.","['Vishnu avatars', 'Hinduism']",70
+Goddess Durga puja,"Search for information about Durga Puja, a major Hindu festival dedicated to the worship of Goddess Durga.","['Durga Puja', 'Hindu festival']",85
+Lord Rama and Sita,Search for information about the relationship between Lord Rama and Goddess Sita in the Ramayana epic.,"['Rama Sita', 'Hindu gods']",90
+Goddess Saraswati puja,"Search for information about Saraswati Puja, a Hindu festival dedicated to the worship of Goddess Saraswati.","['Saraswati Puja', 'Hindu festival']",85
+Lord Hanuman Chalisa,"Search for information about the Hanuman Chalisa, a hymn dedicated to Lord Hanuman, widely recited by devotees.","['Hanuman Chalisa', 'Hinduism']",80
+Goddess Parvati puja,"Search for information about Parvati Puja, a Hindu ritual performed to seek the blessings of Goddess Parvati.","['Parvati Puja', 'Hindu ritual']",75
+Lord Brahma creator,Search for information about Lord Brahma's role as the creator in Hindu mythology.,"['Brahma creator', 'Hinduism']",70
+Goddess Kali mantra,"Search for information about Kali Mantra, a sacred chant dedicated to Goddess Kali.","['Kali Mantra', 'Hinduism']",85
+Lord Murugan temples,"Search for information about temples dedicated to Lord Murugan, such as the Palani Murugan Temple.","['Murugan temples', 'Hinduism']",90
+Goddess Radha Krishna,Search for information about the divine love between Goddess Radha and Lord Krishna in Hindu mythology.,"['Radha Krishna', 'Hindu gods']",85
+Lord Shiva mantra,"Search for information about Shiva Mantra, powerful chants dedicated to Lord Shiva.","['Shiva Mantra', 'Hinduism']",80
+Goddess Sita Ram,Search for information about the relationship between Goddess Sita and Lord Rama in Hindu mythology.,"['Sita Ram', 'Hindu gods']",75
+Lord Krishna bhajan,"Search for information about Krishna Bhajan, devotional songs dedicated to Lord Krishna.","['Krishna Bhajan', 'Hinduism']",70
+Goddess Lakshmi aarti,"Search for information about Lakshmi Aarti, a prayer sung in praise of Goddess Lakshmi.","['Lakshmi Aarti', 'Hinduism']",85
+Lord Vishnu symbolism,"Search for information about the symbolism associated with Lord Vishnu, such as the conch shell and lotus.","['Vishnu symbolism', 'Hinduism']",90
+Lord Shiva stories,Search for information about stories and legends associated with Lord Shiva in Hindu mythology.,"['Shiva stories', 'Hinduism']",85
+Goddess Durga mantra,"Search for information about Durga Mantra, powerful chants dedicated to Goddess Durga.","['Durga Mantra', 'Hinduism']",80
+Lord Rama bhajan,"Search for information about Rama Bhajan, devotional songs dedicated to Lord Rama.","['Rama Bhajan', 'Hinduism']",75
+Goddess Saraswati mantra,"Search for information about Saraswati Mantra, sacred chants dedicated to Goddess Saraswati.","['Saraswati Mantra', 'Hinduism']",70
+Lord Hanuman temples,"Search for information about temples dedicated to Lord Hanuman, such as the Hanuman Temple in Delhi.","['Hanuman temples', 'Hinduism']",85
+Goddess Parvati symbolism,"Search for information about the symbolism associated with Goddess Parvati, such as the lotus and trident.","['Parvati symbolism', 'Hinduism']",90
+Lord Brahma temples,"Search for information about temples dedicated to Lord Brahma, such as the Brahma Temple in Pushkar.","['Brahma temples', 'Hinduism']",85
+Goddess Kali stories,Search for information about stories and legends associated with Goddess Kali in Hindu mythology.,"['Kali stories', 'Hinduism']",80
+Lord Murugan festivals,"Search for information about festivals dedicated to Lord Murugan, such as Thaipusam.","['Murugan festivals', 'Hinduism']",75
+Goddess Radha Krishna art,Search for information about art depicting the divine love between Goddess Radha and Lord Krishna.,"['Radha Krishna art', 'Hinduism']",70
+Lord Shiva temples,"Search for information about temples dedicated to Lord Shiva, such as the Kedarnath Temple.","['Shiva temples', 'Hinduism']",85
+Goddess Sita Ram stories,Search for information about stories and legends associated with Goddess Sita and Lord Rama.,"['Sita Ram stories', 'Hinduism']",90
+Lord Krishna childhood,Search for information about the childhood stories and pastimes of Lord Krishna.,"['Krishna childhood', 'Hinduism']",85
+Goddess Lakshmi stories,Search for information about stories and legends associated with Goddess Lakshmi in Hindu mythology.,"['Lakshmi stories', 'Hinduism']",80
+Lord Vishnu temples,"Search for information about temples dedicated to Lord Vishnu, such as the Tirupati Balaji Temple.","['Vishnu temples', 'Hinduism']",75
+How to knit a scarf,"Search for instructions on knitting a scarf, including different knitting patterns and techniques.","['knitting', 'scarf']",70
+Best hiking trails in the Rockies,"Search for information about the best hiking trails in the Rocky Mountains, including difficulty levels and scenic views.","['hiking trails', 'Rockies']",75
+DIY home decor ideas,"Search for do-it-yourself (DIY) home decor ideas, including upcycling projects and room makeover tips.","['DIY', 'home decor']",80
+Mediterranean diet recipes,"Search for recipes based on the Mediterranean diet, known for its health benefits and delicious flavors.","['Mediterranean diet', 'recipes']",85
+How to grow tomatoes indoors,"Search for tips on growing tomatoes indoors, including choosing the right container and caring for the plants.","['growing tomatoes', 'indoors']",90
+Tips for organizing a small closet,"Search for tips and tricks for organizing a small closet, including storage solutions and decluttering strategies.","['organizing', 'small closet']",85
+Beginner yoga poses,"Search for beginner-friendly yoga poses, including instructions on how to perform them safely and effectively.","['yoga poses', 'beginner']",80
+DIY natural skincare recipes,"Search for do-it-yourself (DIY) natural skincare recipes, using ingredients like honey, avocado, and coconut oil.","['DIY', 'skincare']",75
+Famous impressionist painters,"Search for information about famous impressionist painters, such as Claude Monet, Edgar Degas, and Pierre-Auguste Renoir.","['impressionist painters', 'famous']",70
+Indoor gardening tips,"Search for tips on indoor gardening, including plant care, light requirements, and container gardening ideas.","['indoor gardening', 'tips']",85
+Easy pasta recipes,"Search for easy pasta recipes, including classic dishes like spaghetti carbonara and creamy fettuccine Alfredo.","['pasta recipes', 'easy']",90
+Tips for organizing digital files,"Search for tips for organizing digital files, including creating folders, naming conventions, and backup strategies.","['organizing', 'digital files']",85
+How to make homemade candles,"Search for instructions on how to make homemade candles, including choosing the right wax and adding scents.","['homemade candles', 'making']",80
+Tips for improving posture,"Search for tips and exercises for improving posture, including stretches and ergonomic adjustments.","['improving posture', 'tips']",75
+Best travel destinations for foodies,"Search for the best travel destinations for food enthusiasts, known for their culinary experiences and local cuisines.","['travel destinations', 'foodies']",70
+Beginner photography tips,"Search for beginner photography tips, including composition techniques and camera settings for different situations.","['photography tips', 'beginner']",85
+DIY home renovation ideas,"Search for do-it-yourself (DIY) home renovation ideas, including budget-friendly projects and room transformation inspiration.","['DIY', 'home renovation']",90
+Famous works of Shakespeare,"Search for information about famous works of William Shakespeare, such as ""Romeo and Juliet"" and ""Hamlet.""","['Shakespeare', 'famous works']",85
+How to start a vegetable garden,"Search for information on how to start a vegetable garden, including soil preparation, planting, and maintenance tips.","['starting vegetable garden', 'tips']",80
+Tips for saving money on groceries,"Search for tips for saving money on groceries, including meal planning, using coupons, and shopping smart.","['saving money', 'groceries']",75
+Classic novels everyone should read,"Search for a list of classic novels that everyone should read, including works by Jane Austen, Charles Dickens, and Mark Twain.","['classic novels', 'must-read']",70
+Easy dessert recipes,"Search for easy dessert recipes, including quick and simple treats like no-bake cookies and fruit sorbets.","['dessert recipes', 'easy']",85
+Tips for better sleep,"Search for tips for better sleep, including bedtime routines, sleep hygiene practices, and relaxation techniques.","['better sleep', 'tips']",90
+Best budget-friendly travel destinations,"Search for the best budget-friendly travel destinations, known for their affordability and unique experiences.","['budget travel destinations', 'best']",85
+Beginner knitting patterns,"Search for beginner-friendly knitting patterns, including scarves, hats, and blankets.","['knitting patterns', 'beginner']",80
+DIY natural cleaning recipes,"Search for do-it-yourself (DIY) natural cleaning recipes, using ingredients like vinegar, baking soda, and essential oils.","['DIY', 'cleaning recipes']",75
+Famous modern artists,"Search for information about famous modern artists, such as Pablo Picasso, Salvador Dali, and Frida Kahlo.","['modern artists', 'famous']",70
+Tips for growing succulents,"Search for tips for growing succulents, including watering, sunlight, and soil requirements for these low-maintenance plants.","['growing succulents', 'tips']",85
+How to make homemade soap,"Search for instructions on how to make homemade soap, including choosing the right oils and adding scents and colors.","['homemade soap', 'making']",90
+Best online workout programs,"Search for information about the best online workout programs, including fitness classes, yoga sessions, and personal training.","['online workout programs', 'best']",85
+DIY home decor projects,"Search for do-it-yourself (DIY) home decor projects, including wall art, furniture makeovers, and decorative crafts.","['DIY', 'home decor']",80
+Famous surrealist painters,"Search for information about famous surrealist painters, such as Salvador Dali, Rene Magritte, and Joan Miro.","['surrealist painters', 'famous']",75
+Indoor plant care tips,"Search for tips on caring for indoor plants, including watering schedules, light requirements, and pest control.","['indoor plant care', 'tips']",70
+Best hiking trails in Europe,"Search for information about the best hiking trails in Europe, known for their scenic beauty and challenging terrain.","['hiking trails', 'Europe']",85
+Beginner painting ideas,"Search for beginner-friendly painting ideas, including simple techniques and project ideas for aspiring artists.","['painting ideas', 'beginner']",90
+DIY natural beauty products,"Search for do-it-yourself (DIY) natural beauty product recipes, using ingredients like coconut oil, shea butter, and essential oils.","['DIY', 'beauty products']",85
+Famous impressionist paintings,"Search for information about famous impressionist paintings, such as ""Starry Night"" by Vincent van Gogh and ""Water Lilies"" by Claude Monet.","['impressionist paintings', 'famous']",80
+How to start a compost pile,"Search for information on how to start a compost pile, including what materials to use and how to maintain it.","['starting compost pile', 'tips']",75
+Classic movies to watch,"Search for a list of classic movies to watch, including timeless films from the golden age of cinema.","['classic movies', 'must-watch']",70
+Easy vegetarian recipes,"Search for easy vegetarian recipes, including meatless meals like pasta primavera, vegetable stir-fry, and tofu curry.","['vegetarian recipes', 'easy']",85
+Tips for decluttering your home,"Search for tips for decluttering your home, including strategies for organizing and minimizing possessions.","['decluttering tips', 'home']",90
+Best podcasts for learning,"Search for information about the best podcasts for learning, covering topics like history, science, and personal development.","['learning podcasts', 'best']",85
+Beginner crochet patterns,"Search for beginner-friendly crochet patterns, including scarves, blankets, and amigurumi toys.","['crochet patterns', 'beginner']",80
+DIY natural hair care recipes,"Search for do-it-yourself (DIY) natural hair care recipes, using ingredients like coconut oil, aloe vera, and honey.","['DIY', 'hair care']",75
+Famous contemporary artists,"Search for information about famous contemporary artists, such as Banksy, Yayoi Kusama, and Ai Weiwei.","['contemporary artists', 'famous']",70
+Indoor herb garden ideas,"Search for ideas for creating an indoor herb garden, including container options, herb selection, and care tips.","['indoor herb garden', 'ideas']",85
+How to knit a scarf,"Search for instructions on knitting a scarf, including different knitting patterns and techniques.","['knitting', 'scarf']",70
+Best hiking trails in the Rockies,"Search for information about the best hiking trails in the Rocky Mountains, including difficulty levels and scenic views.","['hiking trails', 'Rockies']",75
+DIY home decor ideas,"Search for do-it-yourself (DIY) home decor ideas, including upcycling projects and room makeover tips.","['DIY', 'home decor']",80
+Mediterranean diet recipes,"Search for recipes based on the Mediterranean diet, known for its health benefits and delicious flavors.","['Mediterranean diet', 'recipes']",85
+How to grow tomatoes indoors,"Search for tips on growing tomatoes indoors, including choosing the right container and caring for the plants.","['growing tomatoes', 'indoors']",90
+Tips for organizing a small closet,"Search for tips and tricks for organizing a small closet, including storage solutions and decluttering strategies.","['organizing', 'small closet']",85
+Beginner yoga poses,"Search for beginner-friendly yoga poses, including instructions on how to perform them safely and effectively.","['yoga poses', 'beginner']",80
+DIY natural skincare recipes,"Search for do-it-yourself (DIY) natural skincare recipes, using ingredients like honey, avocado, and coconut oil.","['DIY', 'skincare']",75
+Famous impressionist painters,"Search for information about famous impressionist painters, such as Claude Monet, Edgar Degas, and Pierre-Auguste Renoir.","['impressionist painters', 'famous']",70
+Indoor gardening tips,"Search for tips on indoor gardening, including plant care, light requirements, and container gardening ideas.","['indoor gardening', 'tips']",85
+Easy pasta recipes,"Search for easy pasta recipes, including classic dishes like spaghetti carbonara and creamy fettuccine Alfredo.","['pasta recipes', 'easy']",90
+Tips for organizing digital files,"Search for tips for organizing digital files, including creating folders, naming conventions, and backup strategies.","['organizing', 'digital files']",85
+How to make homemade candles,"Search for instructions on how to make homemade candles, including choosing the right wax and adding scents.","['homemade candles', 'making']",80
+Tips for improving posture,"Search for tips and exercises for improving posture, including stretches and ergonomic adjustments.","['improving posture', 'tips']",75
+Best travel destinations for foodies,"Search for the best travel destinations for food enthusiasts, known for their culinary experiences and local cuisines.","['travel destinations', 'foodies']",70
+Beginner photography tips,"Search for beginner photography tips, including composition techniques and camera settings for different situations.","['photography tips', 'beginner']",85
+DIY home renovation ideas,"Search for do-it-yourself (DIY) home renovation ideas, including budget-friendly projects and room transformation inspiration.","['DIY', 'home renovation']",90
+Famous works of Shakespeare,"Search for information about famous works of William Shakespeare, such as ""Romeo and Juliet"" and ""Hamlet.""","['Shakespeare', 'famous works']",85
+How to start a vegetable garden,"Search for information on how to start a vegetable garden, including soil preparation, planting, and maintenance tips.","['starting vegetable garden', 'tips']",80
+Tips for saving money on groceries,"Search for tips for saving money on groceries, including meal planning, using coupons, and shopping smart.","['saving money', 'groceries']",75
+Classic novels everyone should read,"Search for a list of classic novels that everyone should read, including works by Jane Austen, Charles Dickens, and Mark Twain.","['classic novels', 'must-read']",70
+Easy dessert recipes,"Search for easy dessert recipes, including quick and simple treats like no-bake cookies and fruit sorbets.","['dessert recipes', 'easy']",85
+Tips for better sleep,"Search for tips for better sleep, including bedtime routines, sleep hygiene practices, and relaxation techniques.","['better sleep', 'tips']",90
+Best budget-friendly travel destinations,"Search for the best budget-friendly travel destinations, known for their affordability and unique experiences.","['budget travel destinations', 'best']",85
+Beginner knitting patterns,"Search for beginner-friendly knitting patterns, including scarves, hats, and blankets.","['knitting patterns', 'beginner']",80
+DIY natural cleaning recipes,"Search for do-it-yourself (DIY) natural cleaning recipes, using ingredients like vinegar, baking soda, and essential oils.","['DIY', 'cleaning recipes']",75
+Famous modern artists,"Search for information about famous modern artists, such as Pablo Picasso, Salvador Dali, and Frida Kahlo.","['modern artists', 'famous']",70
+Tips for growing succulents,"Search for tips for growing succulents, including watering, sunlight, and soil requirements for these low-maintenance plants.","['growing succulents', 'tips']",85
+How to make homemade soap,"Search for instructions on how to make homemade soap, including choosing the right oils and adding scents and colors.","['homemade soap', 'making']",90
+Best online workout programs,"Search for information about the best online workout programs, including fitness classes, yoga sessions, and personal training.","['online workout programs', 'best']",85
+DIY home decor projects,"Search for do-it-yourself (DIY) home decor projects, including wall art, furniture makeovers, and decorative crafts.","['DIY', 'home decor']",80
+Famous surrealist painters,"Search for information about famous surrealist painters, such as Salvador Dali, Rene Magritte, and Joan Miro.","['surrealist painters', 'famous']",75
+Indoor plant care tips,"Search for tips on caring for indoor plants, including watering schedules, light requirements, and pest control.","['indoor plant care', 'tips']",70
+Best hiking trails in Europe,"Search for information about the best hiking trails in Europe, known for their scenic beauty and challenging terrain.","['hiking trails', 'Europe']",85
+Beginner painting ideas,"Search for beginner-friendly painting ideas, including simple techniques and project ideas for aspiring artists.","['painting ideas', 'beginner']",90
+DIY natural beauty products,"Search for do-it-yourself (DIY) natural beauty product recipes, using ingredients like coconut oil, shea butter, and essential oils.","['DIY', 'beauty products']",85
+Famous impressionist paintings,"Search for information about famous impressionist paintings, such as ""Starry Night"" by Vincent van Gogh and ""Water Lilies"" by Claude Monet.","['impressionist paintings', 'famous']",80
+How to start a compost pile,"Search for information on how to start a compost pile, including what materials to use and how to maintain it.","['starting compost pile', 'tips']",75
+Classic movies to watch,"Search for a list of classic movies to watch, including timeless films from the golden age of cinema.","['classic movies', 'must-watch']",70
+Easy vegetarian recipes,"Search for easy vegetarian recipes, including meatless meals like pasta primavera, vegetable stir-fry, and tofu curry.","['vegetarian recipes', 'easy']",85
+Tips for decluttering your home,"Search for tips for decluttering your home, including strategies for organizing and minimizing possessions.","['decluttering tips', 'home']",90
+Best podcasts for learning,"Search for information about the best podcasts for learning, covering topics like history, science, and personal development.","['learning podcasts', 'best']",85
+Beginner crochet patterns,"Search for beginner-friendly crochet patterns, including scarves, blankets, and amigurumi toys.","['crochet patterns', 'beginner']",80
+DIY natural hair care recipes,"Search for do-it-yourself (DIY) natural hair care recipes, using ingredients like coconut oil, aloe vera, and honey.","['DIY', 'hair care']",75
+Famous contemporary artists,"Search for information about famous contemporary artists, such as Banksy, Yayoi Kusama, and Ai Weiwei.","['contemporary artists', 'famous']",70
+Indoor herb garden ideas,"Search for ideas for creating an indoor herb garden, including container options, herb selection, and care tips.","['indoor herb garden', 'ideas']",85

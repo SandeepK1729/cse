@@ -1,24 +1,10 @@
-import { setCookie } from 'cookies-next';
 import { createSlice } from '@reduxjs/toolkit';
 import { authApi } from '../api/authApi';
 import { LoginResponse } from '@/types';
+import { setAppStorage } from '../cookies';
 
 const initialState: Partial<LoginResponse> = {};
   
-// store/auth.ts
-const setAuthCookie = (token: string, name: string) => {
-  const toBase64 = Buffer.from(token).toString('base64');
-
-  setCookie(name, toBase64, {
-    maxAge: 30 * 24 * 60 * 60,
-    path: '/',
-    // more security options here
-    // sameSite: 'strict',
-    // httpOnly: true,
-    // secure: process.env.NODE_ENV === 'production',
-  });
-};
-
 const authSlice = createSlice({
   name: 'auth',
   initialState,
@@ -31,8 +17,8 @@ const authSlice = createSlice({
         (_state, { payload }) => {
           console.log('login promise fulfilled ', payload);
           // set the token in the cookies
-          setAuthCookie(payload.access, 'auth_token');
-          setAuthCookie(payload.refresh, 'refresh_token');
+          setAppStorage('auth_token', payload.access);
+          setAppStorage('refresh_token', payload.refresh);
 
           // store the user data in the store
           // "mutation" also works
@@ -45,8 +31,8 @@ const authSlice = createSlice({
         (_state, { payload }) => {
           console.log('signup promise fulfilled ', payload);
           // set the token in the cookies
-          setAuthCookie(payload.token.access, 'auth_token');
-          setAuthCookie(payload.token.refresh, 'refresh_token');
+          setAppStorage('auth_token', payload.token.access);
+          setAppStorage('refresh_token', payload.token.refresh);
 
           // store the user data in the store
           // "mutation" also works
@@ -58,7 +44,7 @@ const authSlice = createSlice({
         authApi.endpoints.getAuthData.matchFulfilled,
         (_state, { payload }) => {
           // in case we receive a new token when refetching the details
-          setAuthCookie(payload.access, 'auth_token');
+          // setAppStorage('auth_token', payload.access);
           return payload;
         }
       );

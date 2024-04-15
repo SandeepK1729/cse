@@ -17,6 +17,7 @@ const extractSearchResults = (response: SearchApiResponse): Array<SearchResult> 
       priority_score,
     } = item;
     return {
+      q: response.queries.request[0].searchTerms,
       title,
       html_title: htmlTitle,
 

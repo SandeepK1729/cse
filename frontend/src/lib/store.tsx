@@ -8,7 +8,7 @@ export const makeStore = () => {
     reducer: {
       auth: authSlice,
       search: searchSlice,
-
+    
       [authApi.reducerPath]: authApi.reducer,
       [searchApi.reducerPath]: searchApi.reducer,
     },

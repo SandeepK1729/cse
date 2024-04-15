@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import SearchResult, { type ISearchItem } from "./SearchResult";
-import { useAppDispatch } from "@/lib/store";
 import SearchInputBox from "./SearchInputBox";
 
 const SearchModal = () => {
@@ -11,27 +10,8 @@ const SearchModal = () => {
   // search dom manipulation
   useEffect(() => {
     const searchModal = document.getElementById("searchModal");
-    const searchInput = document.getElementById("searchInput");
-    const searchModalOverlay = document.getElementById("searchModalOverlay");
     const searchResultItems = document.querySelectorAll("#searchItem");
-    const searchModalTriggers = document.querySelectorAll(
-      "[data-search-trigger]",
-    );
-
-    // search modal open
-    searchModalTriggers.forEach((button) => {
-      button.addEventListener("click", function () {
-        const searchModal = document.getElementById("searchModal");
-        searchModal!.classList.add("show");
-        searchInput!.focus();
-      });
-    });
-
-    // search modal close
-    searchModalOverlay!.addEventListener("click", function () {
-      searchModal!.classList.remove("show");
-    });
-
+    
     // keyboard navigation
     let selectedIndex = -1;
 
@@ -51,19 +31,17 @@ const SearchModal = () => {
     };
 
     document.addEventListener("keydown", function (event) {
-      if ((event.metaKey || event.ctrlKey) && event.key === "k") {
-        searchModal!.classList.add("show");
-        searchInput!.focus();
-        updateSelection();
-      }
+      // if ((event.metaKey || event.ctrlKey) && event.key === "k") {
+      //   updateSelection();
+      // }
 
       if (event.key === "ArrowUp" || event.key === "ArrowDown") {
         event.preventDefault();
       }
 
-      if (event.key === "Escape") {
-        searchModal!.classList.remove("show");
-      }
+      // if (event.key === "Escape") {
+      //   searchModal!.classList.remove("show");
+      // }
 
       if (event.key === "ArrowUp" && selectedIndex > 0) {
         selectedIndex--;
@@ -73,13 +51,7 @@ const SearchModal = () => {
       ) {
         selectedIndex++;
       } else if (event.key === "Enter") {
-        const activeLink = document.querySelector(
-          ".search-result-item-active a",
-        ) as HTMLAnchorElement;
-        if (activeLink) {
-          activeLink?.click();
-          searchModal!.classList.remove("show");
-        }
+        // implement navigation functionality here
       }
 
       updateSelection();

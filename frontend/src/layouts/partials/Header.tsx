@@ -145,7 +145,9 @@ const Header = () => {
               aria-label="search"
               data-search-trigger
             >
-              <IoSearch />
+              <Link href="/search">
+                <IoSearch />
+              </Link>
             </button>
           )}
           <ThemeSwitcher className="mr-5" />

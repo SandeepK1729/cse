@@ -14,10 +14,11 @@ urlpatterns = [
     path('api/signup/',                 views.SignupView.as_view(),                     name ='signup'),
     path('api/profile/',                views.ProfileView.as_view(),                    name ='profile'),
 
+    path('api/search/',                 views.SearchAPIView.as_view(),                  name='search_api'),
+    path('api/feedback/',               views.FeedbackAPIView.as_view(),                name='feedback'),
+    
     path('search', views.search, name='search'),
-    path('api/search/', views.SearchAPIView.as_view(), name='search_api'),
     path('search_page', views.search_page, name='search_page'),
-    path('feedback', views.feedback, name='feedback'),
     
     path('', include('django.contrib.auth.urls')),
 ]

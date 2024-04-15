@@ -19,10 +19,13 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['*']
-CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
-    env.str('FRONTEND_URL', default = 'http://localhost:3000'),
-]
+
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = ['*']
+# CORS_ORIGIN_WHITELIST = [
+#     "http://localhost:3000",
+#     env.str('FRONTEND_URL', default = 'http://localhost:3000'),
+# ]
 
 # change the setting of append slash 
 
@@ -54,6 +57,7 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
 CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -237,7 +241,7 @@ MODEL = None
 TOKENIZER = None
 MODEL_VERSION = env('MODEL_VERSION', cast = str, default = 'v1')
 TOKENIZING_APPROACH = 'yake'
-THRESHOLD_BACKTRACK_HISTORY = 5
+THRESHOLD_BACKTRACK_HISTORY = 30
 PARAMS = 1000
 
 

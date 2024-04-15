@@ -608,21 +608,37 @@ def search_page(request):
         'link'  : link,
     })
 
-@csrf_exempt
-def feedback(request):
-    if request.method == 'POST':
-        feedback = request.POST.get('feedback') == 'true'
-        query = request.POST.get('q')
-        print(query, type(query))
-        context = {
+class FeedbackAPIView(APIView):
+    permission_classes = (IsAuthenticated, )
+
+    def post(self, request):
+        feedback = request.data.get('feedback', False)
+        query = request.data.get('query')
+        link = request.data.get('link')
+        title = request.data.get('title')
+        snippet = request.data.get('snippet')
+
+        info = {
             'user'  : request.user,
-            'query' : request.POST.get('q'),
-            'query_keys' : extract_keywords(request.POST.get('q')),
-            'interested_keys' : extract_keywords(request.POST.get('snippet')) if feedback else None,
-            'not_interested_keys' : extract_keywords(request.POST.get('snippet')) if not feedback else None,
-            'site' : request.POST.get('link'),
+            'query' : query,
+            'title' : title,
+
+            'query_keys' : extract_keywords(query),
+            'interested_keys' : extract_keywords(snippet) if feedback else [],
+            'not_interested_keys' : extract_keywords(snippet) if not feedback else [],
+            
+            'link' : link,
+            'domain': link.split('/')[2],
+            'route': '/' + '/'.join(link.split('/')[3:]),
         }
 
-        request.user.update_search_profile(context)
+        context = {}
+        for key, value in request.data.items():
+            context[key] = value
+        
+        context.update(info)
 
+        res = request.user.update_search_profile(context)
+        print('result: %s' % res)
         return HttpResponse(status=200)
+    

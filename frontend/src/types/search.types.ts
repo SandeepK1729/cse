@@ -130,16 +130,29 @@ export type SearchRequestConfiguration = {
   data_type: 'any' | 'image' | 'video' | 'news' | 'shopping'; // set default to 'any'
   start_date: Date;
   end_date: Date;
-  // sort: string;
+  highlight: boolean;
+  matchMarker: boolean;
+  caseSensitive: boolean;
+  sort: string;
+  siteSearch: string;
+  siteSearchFilter: 'i' | 'e';
+  linkSite: string;
 }
 
 export type SearchDataResponse = {
   query: string;
   searchConfigurations: SearchRequestConfiguration;
+  isResultsFetched: boolean;
   searchInformation: {
     formattedSearchTime: string;
     formattedTotalResults: string;
     totalResults: string;
   };
   searchResults: Array<SearchResult>;
+  isQueryChanged: boolean;
+}
+
+export type Options = {
+  storageType: "localStorage" | "sessionStorage" | "cookieStorage" | undefined;
+  encode: boolean;
 }
